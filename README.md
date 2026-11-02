@@ -32,7 +32,25 @@ Key Features: Dynamic product search, category filtering, user order history, ne
 ### ⚙️ Machine.pk Sealing Platform
 A specialized web platform designed for the sealing and packaging industry.
 - **🔗 Live Link:** [https://machine-pk-sealing-platform.vercel.app](https://machine-pk-sealing-platform.vercel.app)
+- **🛠️ Tech Stack:** React, Vite, Tailwind CSS, Django, Django REST Framework, PostgreSQL, LangGraph, LangChain, Groq, JWT Auth, Render, Vercel
 - **✨ Highlights:** Includes optimized performance with a 1-minute auto-refresh interval for live data tracking.
+  AECO Sealing Platform (MACHINES.PK) is a full-stack B2B e-commerce platform with a custom AI sales assistant built on LangGraph and Groq. The platform enables industrial buyers to search a live product catalog, check specs, verify inventory, and place real orders through natural-language conversation — all in under 60 seconds.
+
+ #  Detailed Description:
+• LangGraph-powered AI agent with 4 custom tools (search_products, get_product_details, check_inventory, create_order) that read and write to the PostgreSQL database.
+• Server-Sent Events (SSE) streaming for real-time token-by-token AI responses.
+• Token-based authentication with Djoser, secure user registration, and user-linked order tracking.
+• Dynamic visual shipping tracker that animates a delivery truck based on order status (Pending → Paid → Shipped → Delivered).
+• Product catalog with category filtering, sorting, image galleries, and persistent localStorage cart.
+• Admin dashboard (Django Admin) with full CRUD for products, orders, and quotes.
+
+Challenges Solved:
+• Production deployment across Render (backend) + Vercel (frontend), resolving CORS, static file serving (Whitenoise), and media storage issues.
+• AI tool-call schema validation — resolved null-handling errors by typing tool parameters as Optional.
+• Stale token bug in localStorage causing 401 errors — fixed with a custom Axios interceptor.
+• Render cold-start handling with a 60-second request timeout and auto-wakeup strategy.
+
+Result: A production-ready AI-driven B2B platform that reduces customer friction from first inquiry to confirmed order to under one minute.
 
 ### 🚲 Bicycle Rental System
 A web application designed to manage and rent bicycles.
