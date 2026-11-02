@@ -47,7 +47,8 @@ A specialized web platform designed for the sealing and packaging industry.
 - **🔗 Live Link:** [https://machine-pk-sealing-platform.vercel.app](https://machine-pk-sealing-platform.vercel.app)
 - **🛠️ Tech Stack:** React, Vite, Tailwind CSS, Django, Django REST Framework, PostgreSQL, LangGraph, LangChain, Groq, JWT Auth, Render, Vercel
 - **✨ Highlights:** Includes optimized performance with a 1-minute auto-refresh interval for live data tracking.
-  AECO Sealing Platform (MACHINES.PK) is a full-stack B2B e-commerce platform with a custom AI sales assistant built on LangGraph and Groq. The platform enables industrial buyers to search a live product catalog, check specs, verify inventory, and place real orders through natural-language conversation — all in under 60 seconds.
+
+AECO Sealing Platform (MACHINES.PK) is a full-stack B2B e-commerce platform with a custom AI sales assistant built on LangGraph and Groq. The platform enables industrial buyers to search a live product catalog, check specs, verify inventory, and place real orders through natural-language conversation — all in under 60 seconds.
 
  ###  Detailed Description:
 - LangGraph-powered AI agent with 4 custom tools (search_products, get_product_details, check_inventory, create_order) that read and write to the PostgreSQL database.
