@@ -76,11 +76,11 @@ An AI-powered website chatbot integration to assist users with automated respons
 An intelligent, full-stack AI chatbot built to demonstrate advanced LLM orchestration. The backend leverages LangGraph to create an agentic workflow, allowing the AI to autonomously decide when to use Tavily Search for real-time web retrieval and cite its sources.
 
 Key Features:
-• Real-time Streaming: Utilizes FastAPI and Server-Sent Events (SSE) to stream AI responses token-by-token, providing an instant, ChatGPT-like user experience.
-• Agentic RAG Pipeline: The AI is bound to tools and can independently execute web searches to answer questions about recent events or specific facts.
-• Stateful Memory: Implements LangGraph's async SQLite checkpointer to persist multi-turn conversation history, mapping unique thread IDs to specific user sessions.
-• High-Speed Inference: Powered by the Groq API for ultra-fast token generation.
-• Modern Architecture: Uses FastAPI's lifespan context manager for safe, single-time initialization of the AI graph and database connections.
+- Real-time Streaming: Utilizes FastAPI and Server-Sent Events (SSE) to stream AI responses token-by-token, providing an instant, ChatGPT-like user experience.
+- Agentic RAG Pipeline: The AI is bound to tools and can independently execute web searches to answer questions about recent events or specific facts.
+- Stateful Memory: Implements LangGraph's async SQLite checkpointer to persist multi-turn conversation history, mapping unique thread IDs to specific user sessions.
+- High-Speed Inference: Powered by the Groq API for ultra-fast token generation.
+- Modern Architecture: Uses FastAPI's lifespan context manager for safe, single-time initialization of the AI graph and database connections.
 
   
 # 4 🚲 Bicycle Rental System
@@ -94,7 +94,3 @@ A web application designed to manage and rent bicycles.
 Note on Live Demo: The backend was hosted on a free-tier service which has since expired, meaning the database and API are currently offline. The live link demonstrates the React frontend UI. However, the complete full-stack source code (including the Django models, API views, and authentication logic) is available on GitHub to showcase the end-to-end architecture.
 
 
-
-## 📬 Contact
-If you'd like to collaborate or have any questions, feel free to reach out!
-- **Portfolio:** [https://portfolio-five-umber-43.vercel.app](https://portfolio-five-umber-43.vercel.app)
