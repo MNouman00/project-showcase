@@ -16,12 +16,13 @@ A modern, fully responsive portfolio web application showcasing my projects, tec
 
 Here are some of the live applications I have built and deployed:
 
-### 🛒 Complete End-to-End E-Commerce Platform
+# 1 🛒 Complete End-to-End E-Commerce Platform
 A fully functional e-commerce platform featuring a complete user flow from browsing products to checkout.
 - **🔗 Live Link:** [https://complete-end-to-end-e-commerce-plat.vercel.app](https://complete-end-to-end-e-commerce-plat.vercel.app)
 - **🛠️ Tech Stack:** React, Vite, Tailwind CSS, Django, Django REST Framework, PostgreSQL, JWT Authentication, Cloudinary, Vercel, Render
 - **✨ Highlights:** Features robust production-ready configurations including CORS and CSRF security settings.
- #  Detailed Description:
+  A complete, production-deployed e-commerce platform built with React (Vite) and Django REST Framework. Features secure JWT authentication, dynamic category filtering, a persistent shopping cart, and a full checkout flow. Deployed on Vercel and Render.
+ ###  Detailed Description:
 Frontend: React, Vite, Tailwind CSS, React Router, React Helmet (for SEO).
 Backend: Django, Django REST Framework, PostgreSQL.
 Authentication: JWT (JSON Web Tokens) for secure user login and registration.
@@ -29,7 +30,7 @@ Cloud Storage: Cloudinary (for permanent product image hosting).
 Deployment: Frontend hosted on Vercel, Backend & Database hosted on Render.
 Key Features: Dynamic product search, category filtering, user order history, newsletter subscription, and a custom Django Admin panel for inventory management.
 
-### ⚙️ Machine.pk Sealing Platform
+# 2 ⚙️ Machine.pk Sealing Platform
 A specialized web platform designed for the sealing and packaging industry.
 - **🔗 Live Link:** [https://machine-pk-sealing-platform.vercel.app](https://machine-pk-sealing-platform.vercel.app)
 - **🛠️ Tech Stack:** React, Vite, Tailwind CSS, Django, Django REST Framework, PostgreSQL, LangGraph, LangChain, Groq, JWT Auth, Render, Vercel
