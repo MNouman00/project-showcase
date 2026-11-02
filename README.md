@@ -21,7 +21,7 @@ A fully functional e-commerce platform featuring a complete user flow from brows
 - **🔗 Live Link:** [https://complete-end-to-end-e-commerce-plat.vercel.app](https://complete-end-to-end-e-commerce-plat.vercel.app)
 - **🛠️ Tech Stack:** React, Vite, Tailwind CSS, Django, Django REST Framework, PostgreSQL, JWT Authentication, Cloudinary, Vercel, Render
 - **✨ Highlights:** Features robust production-ready configurations including CORS and CSRF security settings.
-- # ** Detailed Description:**
+ #  Detailed Description:
 Frontend: React, Vite, Tailwind CSS, React Router, React Helmet (for SEO).
 Backend: Django, Django REST Framework, PostgreSQL.
 Authentication: JWT (JSON Web Tokens) for secure user login and registration.
