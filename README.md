@@ -37,7 +37,7 @@ A specialized web platform designed for the sealing and packaging industry.
 - **✨ Highlights:** Includes optimized performance with a 1-minute auto-refresh interval for live data tracking.
   AECO Sealing Platform (MACHINES.PK) is a full-stack B2B e-commerce platform with a custom AI sales assistant built on LangGraph and Groq. The platform enables industrial buyers to search a live product catalog, check specs, verify inventory, and place real orders through natural-language conversation — all in under 60 seconds.
 
- #  Detailed Description:
+ ###  Detailed Description:
 • LangGraph-powered AI agent with 4 custom tools (search_products, get_product_details, check_inventory, create_order) that read and write to the PostgreSQL database.
 • Server-Sent Events (SSE) streaming for real-time token-by-token AI responses.
 • Token-based authentication with Djoser, secure user registration, and user-linked order tracking.
@@ -53,7 +53,24 @@ Challenges Solved:
 
 Result: A production-ready AI-driven B2B platform that reduces customer friction from first inquiry to confirmed order to under one minute.
 
-# 3 🚲 Bicycle Rental System
+# 3 🤖 LangGraph Website Chatbot
+An AI-powered website chatbot integration to assist users with automated responses.
+- **🔗 Live Link:** [https://langgraph-website-chatbot.vercel.app](https://langgraph-website-chatbot.vercel.app)
+- **🛠️ Tech Stack:** React, Tailwind CSS, Python, FastAPI, LangGraph, LangChain, Groq API, Tavily Search, SQLite, Server-Sent Events (SSE)
+- **✨ Highlights:** Implements advanced AI workflows for natural language understanding.
+
+###  Detailed Description:
+An intelligent, full-stack AI chatbot built to demonstrate advanced LLM orchestration. The backend leverages LangGraph to create an agentic workflow, allowing the AI to autonomously decide when to use Tavily Search for real-time web retrieval and cite its sources.
+
+Key Features:
+• Real-time Streaming: Utilizes FastAPI and Server-Sent Events (SSE) to stream AI responses token-by-token, providing an instant, ChatGPT-like user experience.
+• Agentic RAG Pipeline: The AI is bound to tools and can independently execute web searches to answer questions about recent events or specific facts.
+• Stateful Memory: Implements LangGraph's async SQLite checkpointer to persist multi-turn conversation history, mapping unique thread IDs to specific user sessions.
+• High-Speed Inference: Powered by the Groq API for ultra-fast token generation.
+• Modern Architecture: Uses FastAPI's lifespan context manager for safe, single-time initialization of the AI graph and database connections.
+
+  
+# 4 🚲 Bicycle Rental System
 A web application designed to manage and rent bicycles.
 - **🔗 Live Link:** [https://bicycle-rental.vercel.app](https://bicycle-rental.vercel.app)
 - **🛠️ Tech Stack:**  React, Django, JavaScript, TailwindCSS, Python, REST API, PostgreSQL (or whatever DB used)
@@ -63,19 +80,7 @@ A web application designed to manage and rent bicycles.
 
 Note on Live Demo: The backend was hosted on a free-tier service which has since expired, meaning the database and API are currently offline. The live link demonstrates the React frontend UI. However, the complete full-stack source code (including the Django models, API views, and authentication logic) is available on GitHub to showcase the end-to-end architecture.
 
-### 🤖 LangGraph Website Chatbot
-An AI-powered website chatbot integration to assist users with automated responses.
-- **🔗 Live Link:** [https://langgraph-website-chatbot.vercel.app](https://langgraph-website-chatbot.vercel.app)
-- **🛠️ Tech Stack:** LangGraph, AI APIs, React
-- **✨ Highlights:** Implements advanced AI workflows for natural language understanding.
 
----
-
-## 🛠️ Core Tech Stack
-- **Frontend:** React, Vite, Tailwind CSS, React Router DOM, FontAwesome
-- **Backend:** Python, Django, Django REST Framework (DRF)
-- **Database:** PostgreSQL
-- **Deployment:** Vercel (Frontend), Render (Backend & Database)
 
 ## 📬 Contact
 If you'd like to collaborate or have any questions, feel free to reach out!
