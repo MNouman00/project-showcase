@@ -53,10 +53,15 @@ Challenges Solved:
 
 Result: A production-ready AI-driven B2B platform that reduces customer friction from first inquiry to confirmed order to under one minute.
 
-### 🚲 Bicycle Rental System
+# 3 🚲 Bicycle Rental System
 A web application designed to manage and rent bicycles.
 - **🔗 Live Link:** [https://bicycle-rental.vercel.app](https://bicycle-rental.vercel.app)
+- **🛠️ Tech Stack:**  React, Django, JavaScript, TailwindCSS, Python, REST API, PostgreSQL (or whatever DB used)
 - **✨ Highlights:** Built with a focus on clean UI and seamless rental management.
+### Detailed Description
+  The Bicycle Rental Website is a full-stack application designed for seamless bike bookings. The frontend is built with React and TailwindCSS, featuring a clean, mobile-first interface, while the backend was developed using Django and Python to handle inventory and booking logic via a custom REST API.
+
+Note on Live Demo: The backend was hosted on a free-tier service which has since expired, meaning the database and API are currently offline. The live link demonstrates the React frontend UI. However, the complete full-stack source code (including the Django models, API views, and authentication logic) is available on GitHub to showcase the end-to-end architecture.
 
 ### 🤖 LangGraph Website Chatbot
 An AI-powered website chatbot integration to assist users with automated responses.
