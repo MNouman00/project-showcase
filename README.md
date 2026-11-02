@@ -24,12 +24,23 @@ A fully functional e-commerce platform featuring a complete user flow from brows
   
  A complete, production-deployed e-commerce platform built with React (Vite) and Django REST Framework. Features secure JWT authentication, dynamic category filtering, a persistent shopping cart, and a full checkout flow. Deployed on Vercel and Render.
  ###  Detailed Description:
-Frontend: React, Vite, Tailwind CSS, React Router, React Helmet (for SEO).
-Backend: Django, Django REST Framework, PostgreSQL.
-Authentication: JWT (JSON Web Tokens) for secure user login and registration.
-Cloud Storage: Cloudinary (for permanent product image hosting).
-Deployment: Frontend hosted on Vercel, Backend & Database hosted on Render.
-Key Features: Dynamic product search, category filtering, user order history, newsletter subscription, and a custom Django Admin panel for inventory management.
+ ### Frontend Functions (React/Vite)
+- Dynamic Product Catalog: Fetches data from the Django API. Allows users to search, filter by category, and sort products by price or date.
+- State Management (Cart): Uses React Context API to manage the shopping cart globally. Users can add items, adjust quantities, and the state persists using localStorage (so the cart doesn't empty if the page refreshes).
+- User Authentication (JWT): Handles user registration and login. It stores the JWT access token securely and passes it in the headers for authenticated requests.
+- Checkout & Payment Flow: Collects shipping details and offers multiple payment methods (Cash on Delivery, Cards, Easypaisa, etc.). It handles form validation and sends the order data to the backend.
+- Order Tracking: Authenticated users have a dedicated dashboard where they can view their order history, check the current status (pending, shipped, etc.), and cancel pending orders.
+
+Backend Functions (Django REST Framework)
+- RESTful API: Provides clean JSON endpoints for products, categories, orders, and user management.
+- Role-Based Access Control: Public users can view products, but only authenticated users (using JWT) can place orders or view their profiles.
+- Custom Admin Dashboard: A powerful backend interface where the store owner can:
+Create, edit, or delete Categories and Products.
+- Manage Stock levels (automatically deducted when an order is placed).
+- Mark products as "Featured" or "On Sale" with custom discount percentages.
+- View and update the status of customer orders (e.g., change from Pending to Shipped).
+- Newsletter System: A dedicated API endpoint that captures user emails from the frontend and securely stores them in the database.
+- Cloudinary Integration: Automatically uploads and serves product images to a cloud CDN, ensuring images load fast and are never lost when the server restarts
 
 # 2 ⚙️ Machine.pk Sealing Platform
 A specialized web platform designed for the sealing and packaging industry.
